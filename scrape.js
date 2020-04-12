@@ -1,7 +1,12 @@
 const request = require('request');
 const cheerio = require('cheerio');
+const path = require('path')
 
-request('https://honeysanime.com', (error, response, html) => {
+
+(function(exports, require, module, __filename, __dirname) {
+
+});
+let scrapeFunction = request('https://honeysanime.com', (error, response, html) => {
     if ( !error && response.statusCode == 200) {
         const $ = cheerio.load(html);
         const itemOne = $('#wpi_ab_twothree-2');
@@ -25,4 +30,5 @@ request('https://honeysanime.com', (error, response, html) => {
 
 console.log(request('https://honeysanime.com'));
 
-module.exports(app.js);
+
+module.exports = "hey";
