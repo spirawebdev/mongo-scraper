@@ -6,7 +6,8 @@ request('https://honeysanime.com', (error, response, html) => {
         const $ = cheerio.load(html);
         const itemOne = $('#wpi_ab_twothree-2');
 
-        console.log(itemOne.find(".item-1").find('.fz10').text());
+        var iOne = itemOne.find(".item-1").find('.fz10').text();
+        return;
         console.log(itemOne.find(".item-1").attr('href'));
         console.log(itemOne.find(".item-2").find('.fz10').text());
         console.log(itemOne.find(".item-3").find('.fz10').text());
@@ -21,3 +22,7 @@ request('https://honeysanime.com', (error, response, html) => {
     }
 
 });
+
+console.log(request('https://honeysanime.com'));
+
+module.exports(app.js);

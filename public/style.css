@@ -1,7 +1,29 @@
-h1 {
-    color: red;
+ h1 {
+    font-size: 4em;
+    color: white;
+    text-shadow: 2px 2px black;
+    text-align: center;
+    padding-top: 6em;
+    padding-bottom: 6em;
+    background: url('https://vignette.wikia.nocookie.net/dragonuniverse/images/9/96/Super_Saiyan_Blue_Goku_%28Broly%29.jpeg/revision/latest?cb=20181126041421');
+    background-size: cover;
+    background-position: center;
+    
 }
 
-body {
-    color: red;
+.navbar {
+    border-bottom: 4px black solid;
+}
+
+
+img {
+    z-index: 1;
+}
+
+.btn {
+    padding: 1em;
+    margin: 1em;
+    font-size: 2em;
+    border-radius: .5em;
+   
 }
